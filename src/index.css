@@ -1,0 +1,7 @@
+@import "tailwindcss";
+.active{
+    background-color: #1ABC9C;
+}
+input{
+    outline: none;
+}
