@@ -8,11 +8,13 @@ import Portfolio from './Comps/Portfolio/Portfolio'
 import Navbar from './Comps/Navbar/Navbar'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './Comps/Layout/Layout'
+import Notfound from './Comps/NotFound/Notfound'
 let route = createBrowserRouter([
   {path:"" , element:<Layout/>, children:[
     {index:true , element:<About/>},
     {path:"portfolio" , element:<Portfolio/>},
     {path:"contact" , element:<Contact/>},
+    {path:"*" , element:<Notfound/>},
   ]},
   
 ])
